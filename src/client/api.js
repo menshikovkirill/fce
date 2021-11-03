@@ -3,8 +3,10 @@ export class Api {
         return 'http://fce-sait.na4u.ru/api/';
     }
     async send(url) {
-        console.log(this.basename + url)
-        return fetch(this.basename + url).then(res => res.json());
+        return fetch(this.basename + url).then(res => {
+            console.log(res)
+            return res.json()
+        });
     }
 }
 
@@ -22,6 +24,10 @@ export class DictionaryApi extends Api{
     }
 
     async getWordsByChapter(id) {
-        return await this.send(this.url + '/list/'+id);
+        return await this.send(this.url + '/list/' + id);
+    }
+
+    async deleteWordById(id) {
+        return await this.send(this.url + '/list/delete/' + id);
     }
 }
