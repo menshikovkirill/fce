@@ -7,3 +7,30 @@
         color: red;
     }
 }
+
+.loader {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 3px #f60 solid;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation: 1s infinite rotation linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.chapter-list {
+    width: 600px;
+    h3 {
+        border-bottom: 1px solid black;
+    }
+}

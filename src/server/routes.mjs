@@ -1,12 +1,10 @@
 import express from 'express';
 import path from 'path';
 import fetch from "node-fetch";
+import {indexHtmlPath} from './config/index.mjs';
 
-const __dirname = path.resolve(path.dirname(''));
-
-const indexHtml = (req, res) => {
-    res.sendFile(path.resolve("..", __dirname, "dist", "index.html"));
-    //res.sendFile('/home/c46622/fce-sait.na4u.ru/app/dist/index.html')
+const indexHtml = (req, res) => {    
+    res.sendFile(indexHtmlPath);
 };
 
 export const router = express.Router();
