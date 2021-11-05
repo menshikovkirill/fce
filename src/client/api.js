@@ -4,7 +4,6 @@ export class Api {
     }
     async send(url) {
         return fetch(this.basename + url).then(res => {
-            console.log(res)
             return res.json()
         });
     }
@@ -29,5 +28,9 @@ export class DictionaryApi extends Api{
 
     async deleteWordById(id) {
         return await this.send(this.url + '/list/delete/' + id);
+    }
+
+    async createWord(russia, english, chapter) {
+        return await this.send(`${this.url}/create/${russia}/${english}/${chapter}/`);
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { DictionaryApi } from '../api';
 import { Loader } from '../components/generic/Loader';
-import { Chapter } from '../components/chapter/chapter';
+import { Chapter } from '../components/chapter/';
 const dictionaryApi = new DictionaryApi();
 
 export const Dictionary = () => {
@@ -19,8 +19,8 @@ export const Dictionary = () => {
         chapters.length == 0 
         ? <Loader /> 
         : <div className="chapter-list">
-            {chapters.map(({id, name}) => (
-                <Chapter key={id} id={id} name={name} wordsDeleted={id == 1}/> //todo
+            {chapters.map(({id, name, isOwnChapter}) => (
+                <Chapter key={id} id={id} name={name} isOwnChapter={isOwnChapter}/> //todo
             ))}
         </div> 
     )
