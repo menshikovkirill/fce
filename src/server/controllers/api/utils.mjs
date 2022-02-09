@@ -2,9 +2,9 @@ import mysql from 'mysql';
 
 export const connection = mysql.createConnection({
     socketPath: "/var/run/mysqld/mysqld.sock",
-    user: "c46622_fce_sait_na4u_ru",
-    password: "ToTtoWofdusah87", 
-    database: 'c46622_fce_sait_na4u_ru'
+    user: "c50268_fcesait_na4u_ru",
+    password: "FiHfuJomwexic47", 
+    database: 'c50268_fcesait_na4u_ru'
 });
 
 export const sendResponse = (res, data) => {

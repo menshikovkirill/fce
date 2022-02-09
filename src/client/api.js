@@ -1,9 +1,9 @@
 export class Api {
-    get basename() {
-        return 'http://fce-sait.na4u.ru/api/';
+    get baseUrl() {
+        return 'http://fcesait.na4u.ru/api/';
     }
     async send(url) {
-        return fetch(this.basename + url).then(res => {
+        return fetch(this.baseUrl + url).then(res => {
             return res.json()
         });
     }
