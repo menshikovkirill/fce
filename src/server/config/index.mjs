@@ -1,6 +1,6 @@
 import path from 'path';
 
-const __dirname = path.resolve(path.dirname(''));
+export const __dirname = path.resolve(path.dirname(''));
 
 export const staticFolder = process.env.NODE_ENV == "production" ? "/home/c50268/fcesait.na4u.ru/app/dist" : "dist";
 export const PORT = Number(process.env.APP_PORT) || 3000;

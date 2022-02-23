@@ -1,7 +1,8 @@
 import express from 'express';
 import path from 'path';
 import fetch from "node-fetch";
-import {indexHtmlPath} from './config/index.mjs';
+import {indexHtmlPath, __dirname} from './config/index.mjs';
+import fs from 'fs'
 
 import * as api from './controllers/api/index.mjs';
 
@@ -15,7 +16,12 @@ export const router = express.Router();
 router.get('/', indexHtml);
 router.get('/dicionary', indexHtml);
 router.get('/tests', indexHtml);
-router.get('/manuals', indexHtml);
+router.get('/articles', indexHtml);
+router.get('/articles/:id', (req, res) => {   
+    let fileContent = fs.readFileSync(path.resolve("..", __dirname, "public", "articles", `${req.params.id}.html`), "utf8"); 
+    let result = fileContent.match(/{{name: \w*}}/gm);
+    res.send(result[0]);
+});
 
 
 //router for api dictionary

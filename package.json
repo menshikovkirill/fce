@@ -5,6 +5,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node ./src/server/index.mjs",
+		"start-watch": "nodemon ./src/server/index.mjs",
         "build": "webpack",
         "watch": "webpack --watch"
     },

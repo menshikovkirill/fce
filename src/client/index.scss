@@ -1,12 +1,47 @@
-.navbar-nav {
-    a {
-        margin-left: 10px;
+.fce-sait {
+    width: 100%;
+    .header {
+        vertical-align: baseline;
+        width: 90%;
+        margin: 0 auto;
+        .title {
+            width: 150px;
+            height: 150px;
+            color: #791009;
+        }
+        .navbar-nav {
+            text-align: center;
+            a {
+                margin-left: 50px;
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+            }
+        
+            .active {
+                color: #791009;
+            }
+        }
     }
 
-    .active {
-        color: red;
+    .home-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        .general-info {
+            width: 70%;
+            margin-right: 50px;
+        }
+        .articles-list {
+            width: 30%;
+            .title {
+                text-align: center;
+            }
+        }
     }
 }
+
+
 
 .loader {
     display: block;
