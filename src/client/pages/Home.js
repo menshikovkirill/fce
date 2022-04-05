@@ -4,42 +4,39 @@ export const Home = () => {
     return (
         <div className="home-container">
             <div className="general-info">
-                <p>Welcome to our site!</p>
+                <h3>Welcome to our site!</h3>
                 <div>
-                Форматы B2 First (FCE): традиционный с письменным выполнением заданий и компьютерный.
+                    <p>First Certificate in English or the international FCE exam is a test that is conducted according to the Cambridge University system for candidates who are not native English speakers.</p>
+                    <p>There are three types of testing:</p>
+                    <ul>
+                        <li> B2 First (FCE) - B2 level general exam;</li>
+                        <li>B2 First for Schools (FCE for Schools) - testing, also focused on B2, but with material adapted for school;</li>
+                        <li>B2 First Computer-based - computer-based exam format.</li>
+                    </ul>
 
-Традиционный формат — письменные задания выполняются на выданных листах карандашом или ручкой. При этом вы можете делать необходимые пометки прямо в тексте задания. Однако вам надо будет тратить время на перенос ответов в специальные бланки.
+                    <div><b>Why take the Cambridge English First Test (FCE)?</b></div>
+                    <div>An FCE certificate will come in handy if you are going to study at a college or university in an English speaking country. Successfully passing the exam will confirm that you know the language at a level sufficient for learning and dealing with everyday situations. This qualification is also useful for those who plan to work abroad: the FCE certificate demonstrates your ability to communicate in a professional environment. In addition, while preparing for the Cambridge FCE exam, you will be able to improve all aspects of the language and increase your general level of knowledge so that you can communicate and understand English more fluently.</div>
 
-Компьютерный формат — все письменные задания выполняются на компьютере. Делать пометки не получится, зато не нужно тратить время на перенос ответов в бланк.
+                    <div class="margin-top"><b>Exam Structure</b></div>
+                    <div>The B2 First exam aims to test all important skills: listening, reading, writing and speaking. The FCE test is divided into four parts:</div>
+                    <p><b>Reading and Use of English.</b></p>
+                    <p>This section tests the ability to read and understand different types of English texts (fiction, non-fiction), as well as use a variety of vocabulary and grammar. There are 7 parts in the Reading section containing tasks of different types: multiple choice, filling in the gaps, rephrasing sentences, finding matches. The total number of questions is 52. 1 hour 15 minutes is allotted for completion.
+                    writing.</p>
+                    <p><b>Writting.</b></p>
+                    <p>The written part consists of two tasks. The first is writing an essay on a given topic with the expression of one's own opinion. In the second, you need to choose one of three formats and write a letter, review or review. You have 1 hour and 20 minutes to complete all tasks.</p>
+                    <p><b>Listening</b></p>
+                    <p>This section tests listening skills. The candidate must understand the speech of native speakers in different formats. The section consists of four parts, tasks include choosing the correct answer, filling in the gaps, finding matches. Duration - approximately 40 minutes.</p>
+                    <p><b>Speaking</b></p>
+                    <p>The oral part tests the candidate's ability to lead a discussion, correctly and appropriately use a variety of vocabulary and grammatical structures. The pronunciation and the logic of the presentation of the material are also evaluated. The speaking test is conducted in the format of a conversation between two (sometimes three) candidates with the examiner and with each other. The conversation lasts an average of 14 minutes.</p>
 
-Устная часть (Speaking) при любом формате экзамена сдается экзаменатору. При этом Speaking сдается в паре с другим кандидатом, реже втроем. Обычно эту часть экзамена переносят на следующий день после сдачи остальных частей.
-
-Срок действия сертификата: бессрочный.
-
-Срок получения результатов: от 2 до 8 недель.
-
-При сдаче экзамена вы получаете секретный код. Зарегистрировав его на сайте cambridgeenglish.org, можно узнать результаты экзамена до получения сертификата. Так, если вы сдаете компьютерный вариант, то результаты выкладывают через 2 недели после теста, а при традиционном варианте — примерно через 4 недели. Сертификат вы получите приблизительно через 6-8 недель после сдачи экзамена.
-
-Подсчет баллов: Кандидат, успешно сдавший экзамен B2 First (FCE), получает два документа: сам сертификат в печатном виде и Statement of Results в электронном виде. В Statement of Results указаны баллы за каждую часть экзамена, общая оценка и ваш уровень. Вы можете посмотреть пример такого документа на этой странице.
-
-Балл	Оценка	Что вам выдадут
-180-190	A	сертификат с оценкой A и уровнем C1 (Advanced) + Statement of Results
-173-179	B	сертификат с оценкой B и уровнем B2 (Upper-Intermediate) + Statement of Results
-160-172	C	сертификат с оценкой C и уровнем B2 (Upper-Intermediate) + Statement of Results
-140-159	Level B1	сертификат с оценкой Level B1 и уровнем B1 (Intermediate) + Statement of Results
-122-139	—	Statement of Results, но без сертификата
-80-121	—	не выдаются никакие документы
-Как видно из таблицы, если вы набрали высокие баллы, то вам выдадут сертификат с указанием следующего (продвинутого) уровня владения английским Advanced. Если же вы набрали менее 122 баллов, никакие документы не выдаются.
-
-Вы также можете посмотреть шкалу соответствия баллов всех кембриджских экзаменов на странице.
                 </div>
             </div>
             <div className="articles-list">
-                <p className="title">Articals about writing</p>
-                <p>1. writing part 1</p>
-                <p>2. writing part 1</p>
-                <p>3. writing part 1</p>
-                <p>4. writing part 1</p>
+                <p className="title">Grades</p>
+                <p>Grade A: 180-190 - C1</p>
+                <p>Grade B: 173–179 - B2</p>
+                <p>Grade C  160–172 - B2</p>
+                <p>Level B1 140–159 - B1</p>
             </div>
         </div>
     )

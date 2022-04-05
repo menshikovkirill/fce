@@ -32,9 +32,9 @@ export const Chapter = ({id, name, isOwnChapter}) => {
             <h3>{name}</h3>
             <ul>
                 {words.map(({id, russia, english}) => (
-                    <li key={id}>
-                        <span>{russia} - {english}</span> 
-                        {isOwnChapter ? <a href="#" className="delete" onClick={(e) => deleteWord(e, id)}>удалить</a> : ""}
+                    <li key={id} className="words-block">
+                        <div>{english}</div>
+                        <div>{russia}</div> 
                     </li>
                 ))}
             </ul>

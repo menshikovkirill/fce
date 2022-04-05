@@ -24,11 +24,10 @@ export const Dictionary = () => {
         })
     }, [updateChapters]);
 
-    // useEffect(() => console.log(chapters), [chapters])
+
 
     return (
         <div className="dictionary-block">
-            <FormAdding callbackSubmit={(data) => setUpdateChapters(data)}/>
             {
                 chapters.length == 0 
                 ? <Loader /> 

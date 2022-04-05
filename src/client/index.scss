@@ -1,25 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .fce-sait {
     width: 100%;
+    margin: 0;
+    padding: 0;
     .header {
         vertical-align: baseline;
-        width: 90%;
-        margin: 0 auto;
-        .title {
-            width: 150px;
-            height: 150px;
-            color: #791009;
+        background-color: #351A56;
+        display: flex;
+        justify-content: space-around;
+        color: #E3FE45;
+
+        .title a{
+            color: #E3FE45;
+            text-decoration: none;
         }
         .navbar-nav {
-            text-align: center;
+            text-align: right;
+            display: flex;
+            align-items: center;
             a {
                 margin-left: 50px;
                 text-decoration: none;
-                color: black;
-                font-size: 25px;
+                font-size: 20px;
+                color: #E3FE45;
             }
         
             .active {
-                color: #791009;
+                color: white;
             }
         }
     }
@@ -60,5 +70,71 @@
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+.articles-block {
+    .block {
+        width: 400px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    a {
+        color: blue
+    }
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.general-info {
+    line-height: 25px;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.articles-block {
+    display: flex;
+    div {
+        margin-right: 100px;
+    }
+    ul {
+        margin: 30px;
+    }
+}
+
+.chapter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    .chapter {
+        border: 1px solid black;
+        border-bottom: none;
+        flex: 1 1 auto;
+        margin: 15px 15px;
+        width: 400px;
+        height: fit-content;
+    }
+}
+
+.general-info {
+    ul {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.materials-block {
+    ul {
+        margin-left: 30px;
+    }
+
+    a {
+        color: blue
     }
 }

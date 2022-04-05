@@ -4,6 +4,7 @@ import {PORT, staticFolder, IP} from './config/index.mjs';
 
 const app = express();
 app.use(express.json());
+
 app.use('/', express.static(staticFolder));
 app.use('/', router);
 

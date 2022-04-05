@@ -11,16 +11,16 @@ const indexHtml = (req, res) => {
 };
 
 export const router = express.Router();
-
+router.use(express.static(path.join(__dirname, 'public')));
 //router for pages
 router.get('/', indexHtml);
 router.get('/dicionary', indexHtml);
 router.get('/tests', indexHtml);
 router.get('/articles', indexHtml);
 router.get('/articles/:id', (req, res) => {   
-    let fileContent = fs.readFileSync(path.resolve("..", __dirname, "public", "articles", `${req.params.id}.html`), "utf8"); 
-    let result = fileContent.match(/{{name: \w*}}/gm);
-    res.send(result[0]);
+    let fileContent = fs.readFileSync(path.resolve("..", __dirname, "public", "articles",  `${req.params.id}.html`), "utf8"); 
+
+    res.send(fileContent);
 });
 
 
