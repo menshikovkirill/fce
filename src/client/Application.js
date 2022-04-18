@@ -13,11 +13,11 @@ export const Application = () => {
     return (<div className="fce-sait">
         <div className="header">
             <div className="title">
-                <NavLink exact  className="nav-link" activeClassName="active" to="/"><h1>FCE EXAM WITH FUN</h1></NavLink>
+                <NavLink exact  className="nav-link" activeClassName="active" to="/"><h1>Fce exam with fun</h1></NavLink>
             </div>
             <div className="navbar-nav">
-                <NavLink exact  className="nav-link" activeClassName="active" to="/">Home</NavLink>
-                <NavLink className="nav-link" activeClassName="active" to="/dicionary">Dicionary</NavLink>
+                <NavLink exact className="nav-link" activeClassName="active" to="/">Home</NavLink>
+                <NavLink className="nav-link" activeClassName="active" to="/dicionary">Dictionary</NavLink>
                 <NavLink className="nav-link" activeClassName="active" to="/materials">Materials</NavLink>
                 <NavLink className="nav-link" activeClassName="active" to="/articles">Articles</NavLink>
             </div>
@@ -25,9 +25,9 @@ export const Application = () => {
 
         <div className="container">
             <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/dicionary" exact component={Dictionary} />
-                <Route path="/materials" component={Materials} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/dicionary" component={Dictionary} />
+                <Route exact path="/materials" component={Materials} />
                 <Route path="/articles" component={Articles} />
             </Switch>
             {/* <FormAdding /> */}

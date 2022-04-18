@@ -28,6 +28,7 @@ export const Dictionary = () => {
 
     return (
         <div className="dictionary-block">
+            <h2>Dictionary</h2>
             {
                 chapters.length == 0 
                 ? <Loader /> 

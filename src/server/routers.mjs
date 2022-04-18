@@ -15,7 +15,7 @@ router.use(express.static(path.join(__dirname, 'public')));
 //router for pages
 router.get('/', indexHtml);
 router.get('/dicionary', indexHtml);
-router.get('/tests', indexHtml);
+router.get('/materials', indexHtml);
 router.get('/articles', indexHtml);
 router.get('/articles/:id', (req, res) => {   
     let fileContent = fs.readFileSync(path.resolve("..", __dirname, "public", "articles",  `${req.params.id}.html`), "utf8"); 
